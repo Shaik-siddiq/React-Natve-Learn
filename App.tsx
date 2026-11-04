@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
+import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
+import ActivityIndicatorClass from './NativeClasses/ActivityIndicatorClass';
+import ViewComponentClass from './NativeClasses/ViewComponentClass'
+import FlexBoxClass from './NativeClasses/FlexBoxClass';
+import FlexDirectionClass from './NativeClasses/FlexDirectionClass';
+import FlexWrapClass from './NativeClasses/FlexWrapClass';
+import PositionClass from './NativeClasses/PositionClass';
+import DimensionsClass from './NativeClasses/DimensionsClass';
+import ModalClass from './NativeClasses/ModalClass';
+import ImageBackgroundClass from './NativeClasses/ImageBackgroundClass';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+       {/* <ActivityIndicatorClass />
+      <FlexBoxClass />
+    <FlexDirectionClass />
+      <FlexWrapClass />
+      <PositionClass />
+      <DimensionsClass />
+      <ModalClass />
+      <ViewComponentClass /> */}
+      <ImageBackgroundClass />
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
